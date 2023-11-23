@@ -7,17 +7,18 @@ import {
   HomeOutlined,ShoppingCartOutlined
 } from "@ant-design/icons";
 import { flushSync } from "react-dom";
+import getCart  from "./Apis/getCart";
 
 
-
-function Header(){
+function Header(prop){
 
 return(
-  <div className="appheader">
- <Typography.Title></Typography.Title>
+  <div className="appheader"> 
+  <div onClick={()=>prop.handelShow(false)}>Shopping Cart App</div>
+   <div onClick={()=>prop.handelShow(true)}>Cart
+  <sup>{prop.count}</sup>
+  </div>  
 
- <Typography.Title>Sri store</Typography.Title>
- <AppCart/>
   </div>
 
 

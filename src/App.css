@@ -11,7 +11,12 @@
   width: 100vw;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center;  
+  background-color:darkmagenta;
+  padding: 20px 30px;
+}
+.headersize{
+  font-size: '90px';
 }
 .appfooter{
   height: 60px;
@@ -59,4 +64,20 @@
 .itensCardimage{
   height: 150 px !important ;
 object-fit:scale-down;
+}
+
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shopping-card {
+  justify-content: space-between;
+  background-color:chocolate;
+  padding: 20px 30px;
+}
+
+.product-item {
+  padding: 20px;
 }
